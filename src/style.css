@@ -1,1 +1,112 @@
+:root {
+  --branding-color: #e8dbd3;
+  --secondary-color: #e7e4e2;
+  --third-color: #a2b1b5;
+  --heading-font-family: "EB Garamond", serif;
+  --default-font-family: "Josefin Slab", serif;
+  --other-font-family: "Poppins", serif;
+}
 
+body {
+  font-family: var(--heading-font-family);
+  background-color: var(--third-color);
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/pinksky.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #272044;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: white;
+  text-decoration: none;
+}
+
+section {
+  background: var(--branding-color);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+section.secondary {
+  background: var(--secondary-color);
+}
+
+.btn {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: var(--branding-color);
+  color: black;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #be7573;
+  color: white;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #be7573;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+}
