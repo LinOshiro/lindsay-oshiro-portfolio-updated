@@ -57,7 +57,6 @@ section {
 }
 
 footer {
-  color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/ocean.avif");
   background-repeat: no-repeat;
@@ -66,7 +65,7 @@ footer {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -141,6 +140,20 @@ footer {
   border-radius: 4px;
 }
 
+.contact-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/ocean.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.contact-header {
+  margin-bottom: 15px;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px var(--branding-color);
+}
+
 .projects {
   text-align: center;
   line-height: 5;
@@ -160,6 +173,14 @@ footer {
 
 .img-lindsay {
   border-radius: 10px;
+}
+
+.contact-info {
+  text-shadow: 1px 1px 2px var(--branding-color);
+}
+
+i {
+  font-size: 50px;
 }
 
 section.secondary {
@@ -193,6 +214,11 @@ nav a {
 nav a:hover,
 nav li.active a {
   color: var(--branding-color);
+}
+
+a {
+  color: rgb(238, 213, 225);
+  text-decoration: none;
 }
 
 a:hover {
