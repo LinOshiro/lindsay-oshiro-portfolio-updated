@@ -155,7 +155,6 @@ footer {
 }
 
 .projects {
-  text-align: center;
   line-height: 5;
   font-size: 28px;
   font-weight: bold;
@@ -165,26 +164,12 @@ footer {
   padding: 120 60px;
 }
 
-.img-projects {
-  width: 75%;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.img-lindsay {
-  border-radius: 10px;
-}
-
 .contact-info {
   text-shadow: 1px 1px 2px var(--branding-color);
 }
 
 i {
   font-size: 50px;
-}
-
-section.secondary {
-  background: var(--secondary-color);
 }
 
 nav {
@@ -206,14 +191,14 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #272142;
+  color: var(--branding-color);
   transition: all 100ms ease-in-out;
   text-transform: uppercase;
 }
 
 nav a:hover,
 nav li.active a {
-  color: var(--branding-color);
+  color: #be7573;
 }
 
 a {
@@ -224,6 +209,12 @@ a {
 a:hover {
   color: #be7573;
   cursor: pointer;
+}
+
+.nav-logo {
+  color: var(--branding-color);
+  font-size: 30px;
+  padding-right: 1100px;
 }
 
 .btn-branding {
