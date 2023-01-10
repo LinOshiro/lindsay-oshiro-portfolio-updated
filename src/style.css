@@ -2,8 +2,10 @@
   --branding-color: #e8dbd3;
   --secondary-color: #e7e4e2;
   --third-color: #a2b1b5;
-  --heading-font-family: "EB Garamond", serif;
-  --default-font-family: "Josefin Slab", serif;
+  --heading-font-family: "Poppins", sans-serif;
+  --default-font-family: "Roboto", sans-serif;
+  --cursive-font-family: "Dancing Script", cursive;
+  --decorative-font-family: "Libre Baskerville", serif;
 }
 
 body {
@@ -17,7 +19,6 @@ h4,
 h5,
 h6 {
   color: black;
-  font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
@@ -40,8 +41,8 @@ h4 {
 
 p {
   font-size: 20px;
-  font-weight: 600;
   line-height: 30px;
+  font-family: var(--default-font-family);
 }
 
 header a {
@@ -122,10 +123,10 @@ footer .social-links a:hover {
 
 .hero h1 {
   font-weight: 700;
-  font-size: 100px;
+  font-size: 90px;
   line-height: 1.5;
   margin: 0;
-  font-family: var(--heading-font-family);
+  font-family: var(--decorative-font-family);
   color: white;
 }
 
@@ -148,16 +149,16 @@ footer .social-links a:hover {
 .content h1 {
   font-size: 64px;
   line-height: 80px;
-  font-family: var(--heading-font-family);
+  font-family: var(--decorative-font-family);
 }
 
 .content h2 {
-  font-size: 18px;
+  font-size: 25px;
   font-family: var(--default-font-family);
 }
 
 .content h3 {
-  font-size: 30px;
+  font-size: 35px;
   font-family: var(--default-font-family);
   line-height: 1.5;
   margin: 20px 0 0;
@@ -217,6 +218,22 @@ footer .social-links a:hover {
   border-radius: 50%;
   width: 500px;
   height: auto;
+}
+
+.certifications {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  margin: 80px 0;
+  padding: 10px;
+}
+
+.about-link {
+  font-size: 30px;
+  color: black;
+}
+
+.img-certificates {
+  padding: 15px;
 }
 
 i {
