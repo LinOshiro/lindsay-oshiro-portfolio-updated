@@ -2,10 +2,43 @@
   --branding-color: #e8dbd3;
   --secondary-color: #e7e4e2;
   --third-color: #a2b1b5;
+  --link-color: #be7573;
   --heading-font-family: "Poppins", sans-serif;
   --default-font-family: "Roboto", sans-serif;
   --cursive-font-family: "Dancing Script", cursive;
   --decorative-font-family: "Libre Baskerville", serif;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 * {
@@ -66,7 +99,7 @@ nav li {
   margin-left: 25px;
   font-size: 25px;
   font-weight: 600;
-  text-shadow: 1px 1px 2px grey;
+  text-shadow: 1px 1px 3px rgb(87, 85, 85);
 }
 
 nav a {
@@ -78,11 +111,12 @@ nav a {
 
 nav a:hover,
 nav li.active a {
-  color: #be7573;
+  color: var(--link-color);
+  font-weight: 800;
 }
 
 a {
-  color: rgb(238, 213, 225);
+  color: white;
   text-decoration: none;
 }
 
@@ -96,36 +130,54 @@ a:hover {
   margin-right: 1010px;
 }
 
-.hero {
+header.hero {
   height: 85vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/pinksky.avif");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
   color: white;
   text-align: center;
   padding: 200px 0;
 }
 
-.hero h1 {
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 1.5;
-  margin: 0;
-  font-family: var(--decorative-font-family);
-  color: white;
+.text-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.hero h2 {
-  font-weight: 300;
+.text-box h1 {
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 10px;
+  font-family: var(--decorative-font-family);
+  color: white;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.text-box h2 {
+  font-weight: 200;
   font-size: 30px;
   line-height: 1.5;
   margin: 0;
   color: white;
-  font-family: var(--default-font-family);
+  font-family: var(--heading-font-family);
+  text-transform: uppercase;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
-.hero p {
+.text-box p {
   font-family: var(--default-font-family);
   font-size: 30px;
   font-weight: bold;
@@ -155,13 +207,13 @@ section {
 footer .email-link {
   text-decoration: none;
   color: var(--branding-color);
-  font-size: 38px;
+  font-size: 40px;
   text-align: center;
   text-shadow: 1px 1px 3px rgb(87, 85, 85);
 }
 
 footer .email-link:hover {
-  color: #be7573;
+  color: var(--link-color);
 }
 
 footer .social-links a {
@@ -175,7 +227,14 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: #be7573;
+  color: var(--link-color);
+}
+
+footer .copywrite {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 22px;
 }
 
 .git-link {
@@ -235,7 +294,7 @@ footer .social-links a:hover {
 }
 
 .contact-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/ocean.avif");
   background-repeat: no-repeat;
   background-size: cover;
@@ -299,9 +358,9 @@ i {
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
-  padding: 15px 30px;
+  padding: 20px 35px;
   background-color: var(--branding-color);
-  color: black;
+  color: var(--link-color);
   text-decoration: none;
   border-radius: 4px;
   font-family: var(--heading-font-family);
@@ -313,7 +372,7 @@ i {
   line-height: 21px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  padding: 15px 30px;
+  padding: 15px 40px;
   background-color: var(--third-color);
   color: white;
   text-decoration: none;
@@ -322,9 +381,16 @@ i {
 }
 
 .btn:hover {
-  background-color: #be7573;
+  background-color: var(--link-color);
   color: white;
   cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .carousel {
@@ -337,7 +403,7 @@ i {
 
 .carousel-text {
   text-align: center;
-  text-shadow: #be7573 1px 0 20px;
+  text-shadow: var(--link-color) 1px 0 20px;
 }
 
 .carousel__image {
