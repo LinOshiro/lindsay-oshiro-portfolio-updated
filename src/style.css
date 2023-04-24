@@ -731,7 +731,7 @@ header a {
 }
 
 /*--- Mobile ---*/
-@media only screen and (min-width: 350px) and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 390px) {
   body {
     font-size: 10px;
     line-height: 1;
@@ -744,7 +744,7 @@ header a {
   }
 
   .container {
-    max-width: 550px;
+    max-width: 350px;
     margin: 0 auto;
   }
 
@@ -759,13 +759,13 @@ header a {
 
   nav li {
     line-height: 1;
-    margin-left: 10px;
+    margin-left: 8px;
     font-size: 10px;
   }
 
   .nav-logo {
-    max-height: 30px;
-    margin-right: 275px;
+    max-height: 25px;
+    margin-right: 90px;
   }
 
   footer .email-link {
@@ -781,7 +781,7 @@ header a {
   footer .copywrite {
     margin-top: 50px;
     margin-bottom: 50px;
-    font-size: 12px;
+    font-size: 9px !important;
   }
 
   .contact-box {
@@ -802,25 +802,25 @@ header a {
 
   .btn-branding {
     font-weight: 700;
-    font-size: 10px;
+    font-size: 8px;
     line-height: 1;
     letter-spacing: 1px;
-    padding: 8px 10px;
+    padding: 6px 8px;
     margin-top: 0;
   }
 
   .btn-branding-outline {
     font-weight: 700;
-    font-size: 10px;
+    font-size: 8px;
     line-height: 1;
     letter-spacing: 1px;
-    padding: 8px 10px;
+    padding: 6px 8px;
   }
 
   /* index.html */
   header.hero {
     height: 75vh;
-    padding: 150px 0;
+    padding: 50px 0;
   }
 
   .text-box {
@@ -832,7 +832,7 @@ header a {
 
   .text-box h1 {
     font-weight: 600;
-    font-size: 34px;
+    font-size: 20px;
     line-height: 0.5;
     margin-top: 6px;
     padding: 10px;
@@ -840,15 +840,16 @@ header a {
 
   .text-box h2 {
     font-weight: 200;
-    font-size: 15px;
+    font-size: 10px;
     line-height: 1;
     margin: 0;
   }
 
-  .projects {
-    margin: 8px;
-    line-height: 0.5;
-    font-size: 6px;
+  .section-home .projects {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-size: 12px;
   }
 
   .carousel-text {
@@ -881,7 +882,7 @@ header a {
   }
 
   .content h1 {
-    font-size: 25px;
+    font-size: 13px;
   }
 
   .content p {
@@ -894,7 +895,7 @@ header a {
   }
 
   .work {
-    font-size: 20px;
+    font-size: 15px;
     padding: 15px;
   }
 
@@ -915,13 +916,9 @@ header a {
     font-size: 14px;
   }
 
-  p.projects {
-    line-height: 1;
-    font-size: 18px;
-    margin-bottom: 50px;
-  }
-
   .carousel-text {
+    margin-top: 20px;
+    margin-bottom: 0;
     font-size: 12px;
   }
 
@@ -939,23 +936,23 @@ header a {
   }
 
   .about-link {
-    font-size: 20px;
+    font-size: 12px;
   }
 
   .img-certificates {
-    width: 300px;
+    width: 200px;
     padding: 20px;
   }
 
   .carousel {
-    height: 260px;
+    height: 160px;
     width: 80%;
     margin: 0 auto;
     padding: 45px;
   }
 
   .carousel__button img {
-    width: 8px;
+    width: 5px;
   }
 
   .carousel__nav {
@@ -963,8 +960,8 @@ header a {
   }
 
   .carousel__indicator {
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     margin: 0 12px;
   }
 }
